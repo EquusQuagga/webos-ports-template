@@ -48,6 +48,9 @@ enyo.kind({
 			palmTest.go();
 			
 			this.palm = true;
+			
+			//Tell the system manager to stop the card animation and show the actual app.
+			PalmSystem.stageReady();
 		}
 		catch(e) {
 			enyo.log("Non-palm platform, service requests disabled.");
